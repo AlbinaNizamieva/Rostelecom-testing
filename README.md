@@ -20,3 +20,23 @@ DotEnv file
 -----------
 
 I used .env file to store my email (valid_email), phone (valid_phone), login (valid_login), personal account number (valid_ls) and password (valid_password) for my Rostelecom account. Note that I used the same password in all the cases, so there's only one variable for it.
+
+
+How To Run Tests
+----------------
+
+1) Install all requirements:
+
+    ```bash
+    pip3 install -r requirements
+    ```
+
+2) Download Selenium WebDriver from https://chromedriver.chromium.org/downloads (choose version which is compatible with your browser)
+
+3) Run tests:
+
+    ```bash
+    python3 -m pytest -v --driver Chrome --driver-path ~/chrome tests/*
+    ```
+
+   ![alt text](example.png)
